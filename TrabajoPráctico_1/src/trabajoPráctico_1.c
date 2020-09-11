@@ -12,6 +12,36 @@
 #include <stdlib.h>
 
 int main(void) {
-	printf("Esto es un testing"); /* prints !!!Hello World!!! */
+
+	float suma;
+	float resta;
+	float división;
+	float multiplicación;
+	float factorial;
+
+	float resultadoSuma;
+	float resultadoResta;
+	float resultadoDivisión;
+	float resultadoMultiplicación;
+	float resultadoFactorial;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
 }
