@@ -14,18 +14,18 @@
 int main(void) {
 
 
-	int opción; // Variable del menú
+	int opcion; // Variable del menú
 
 	// Variables para el ingreso de datos
-	float número1;
-	float número2;
+	int numero1;
+	int numero2;
 
-   // Variables para iniciar las operaciones
-	float suma;
-	float resta;
-	float división;
-	float multiplicación;
-	float factorial;
+   /* Variables para iniciar las operaciones
+	int suma;
+	int resta;
+	int división;
+	int multiplicación;
+	int factorial;
 
 	// Variables para capturar el resultado que devuelve la función
 
@@ -33,18 +33,25 @@ int main(void) {
 	float resultadoResta;
 	float resultadoDivisión;
 	float resultadoMultiplicación;
-	float resultadoFactorial;
+	float resultadoFactorial;*/
 
 
 	do
 	    {
 	        printf("1. Cargar\n2. Mostrar\n3. Eliminar\n4.Salir\n");
 	        printf("Elija una opcion: ");
-	        scanf("%d", &opción);
-	        switch(opción)
+	        scanf("%d", &opcion);
+	        switch(opcion)
 	        {
 	            case 1:
-	                printf("\nEstoy cargando...\n");
+	            	printf("Ingrese un número: ");
+	            	scanf("%d", & numero1);
+
+	            	printf("Ingrese otro número: ");
+	            	scanf("%d", & numero2);
+
+	               printf("\nEstoy cargando...\n ");
+
 	            break;
 	            case 2:
 	                printf("Estoy mostrando...\n");
@@ -58,10 +65,15 @@ int main(void) {
 
 	        }
 
+	       // resultadoSuma = Sumar(num1;num2);
 
 
 
-	    }while(opción!=4);
+
+
+
+
+	    }while(opcion!=4);
 
 
 
@@ -92,16 +104,16 @@ int main(void) {
 	return EXIT_SUCCESS;
 }
 
-// Funciones para mi calculadora
+/* Funciones para mi calculadora
 
-int Sumar(float número1, float número2) // prototipo de la función sumar
+int Sumar(int número1, int número2) // prototipo de la función sumar
 
 {
 	float resultado;
 
-	resultado = número1 + número2;
+	resultado =  (float) número1 + número2;
 
 	return resultado;
-}
+}*/
 
 
