@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int main(void) {
 
 
@@ -38,7 +39,7 @@ int main(void) {
 
 	do
 	    {
-	        printf("1. Cargar\n2. Mostrar\n3. Eliminar\n4.Salir\n");
+	        printf("1. Cargar números\n2. Mostrar resultado \n3. Eliminar números\n4.Salir\n");
 	        printf("Elija una opcion: ");
 	        scanf("%d", &opcion);
 	        switch(opcion)
@@ -46,15 +47,23 @@ int main(void) {
 	            case 1:
 	            	printf("Ingrese un número: ");
 	            	scanf("%d", & numero1);
+	            	printf("\nEstoy cargando...\n ");
+	            	printf("\nEl primer operador es: %d \n", numero1);
 
 	            	printf("Ingrese otro número: ");
 	            	scanf("%d", & numero2);
+	            	printf("\nEstoy cargando...\n ");
+	            	printf("El segundo operador es: %d \n", numero2);
 
-	               printf("\nEstoy cargando...\n ");
 
 	            break;
 	            case 2:
-	                printf("Estoy mostrando...\n");
+	                printf("\nEstoy mostrando...\n ");
+
+
+
+
+
 	            break;
 	            case 3:
 	                printf("\nEstoy eliminando...\n");
@@ -106,14 +115,50 @@ int main(void) {
 
 /* Funciones para mi calculadora
 
-int Sumar(int número1, int número2) // prototipo de la función sumar
+int Sumar(int numero1, int numero2) // prototipo de la función sumar
 
 {
 	float resultado;
 
-	resultado =  (float) número1 + número2;
+	resultado =  (float) numero1 + numero2;
 
 	return resultado;
-}*/
+}
+
+int Restar(int numero1, int numero2) // prototipo función restar
+{
+	float resultado;
+
+	resultado =(float) numero1 + numero2;
+
+	return resultado; // qué devuelve la función
+
+}
+
+int Multiplicar(int numero1, int numero2)
+
+{
+	float resultado;
+
+	resultado = (float) numero1 + numero2;
+
+	return resultado;
+
+}
+
+int Dividir(int numero1, int numero2)
+{
+	float resultado;
+
+	resultado = (float) numero1 + numero2;
+
+	return resultado;
+
+}
+
+
+
+
+*/
 
 
