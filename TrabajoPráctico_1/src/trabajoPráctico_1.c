@@ -14,7 +14,12 @@
 
 int main(void) {
 
-
+	float operando1;
+	float operando2;
+	float resultadoSuma;
+	float resultadoResta;
+	float resultadoMultiplicacion;
+	float resultadoDivision;
 	int opcion;
 
 
@@ -27,21 +32,40 @@ int main(void) {
 	        switch(opcion)
 	        {
 	            case 1:
-	            	printf("\nEl operando ingresado es...\n");
+	            	printf("\nIngrese el primer operando: \n");
+	            	scanf("%f", &operando1);
+
+	            	printf("\nEl primer operando ingresado es %f \n", operando1);
 
 	            break;
 	            case 2:
-	                printf("\nEl segundo operando ingresado es...	\n");
+	            	printf("\nIngrese el segundo operando: \n");
+	            	scanf("%f", &operando2);
+
+	            	printf("\nEl segundo operando ingresado es: %f \n", operando2);
 
 	            break;
 	            case 3:
-	                printf("\nEstoy realizando las operaciones...\n");
+
+	            	 printf("\nRealizando las operaciones...\n");
+
 	            break;
 	            case 4:
-	                printf("\nEl resultado es: \n");
+
+	            	resultadoSuma = Sumar(operando1, operando2);
+	            	resultadoResta = Restar(operando1, operando2);
+	            	resultadoMultiplicacion = Multiplicar(operando1, operando2);
+	            	resultadoDivision  = Dividir(operando1, operando2);
+
+
+	                printf("\nEl resultado es: %f \n", resultadoSuma);
+	                printf("\nEl resultado es: %f \n", resultadoResta);
+	                printf("\nEl resultado es: %f \n", resultadoMultiplicacion);
+	                printf("\nEl resultado es: %f \n", resultadoDivision);
+
 	            break;
 	            case 5:
-	            	printf("\nGracias por utilizar este programa el programa.\n");
+	            	printf("\nGracias por utilizar este programa.\n");
 
 	        }
 
