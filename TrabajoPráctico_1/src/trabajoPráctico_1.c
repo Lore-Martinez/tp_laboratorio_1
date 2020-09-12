@@ -10,155 +10,61 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "OperacionesAritmeticas.h"
 
 int main(void) {
 
 
-	int opcion; // Variable del menú
-
-	// Variables para el ingreso de datos
-	int numero1;
-	int numero2;
-
-   /* Variables para iniciar las operaciones
-	int suma;
-	int resta;
-	int división;
-	int multiplicación;
-	int factorial;
-
-	// Variables para capturar el resultado que devuelve la función
-
-	float resultadoSuma;
-	float resultadoResta;
-	float resultadoDivisión;
-	float resultadoMultiplicación;
-	float resultadoFactorial;*/
+	int opcion;
 
 
 	do
 	    {
-	        printf("1. Cargar números\n2. Mostrar resultado \n3. Eliminar números\n4.Salir\n");
+			printf("\nCalculadora UTN \n");
+	        printf("1. Cargar primer operando\n2. Cargar segundo operando \n3. Realizar operaciones\n4.Mostrar resultados\n5. Salir\n");
 	        printf("Elija una opcion: ");
 	        scanf("%d", &opcion);
 	        switch(opcion)
 	        {
 	            case 1:
-	            	printf("Ingrese un número: ");
-	            	scanf("%d", & numero1);
-	            	printf("\nEstoy cargando...\n ");
-	            	printf("\nEl primer operador es: %d \n", numero1);
-
-	            	printf("Ingrese otro número: ");
-	            	scanf("%d", & numero2);
-	            	printf("\nEstoy cargando...\n ");
-	            	printf("El segundo operador es: %d \n", numero2);
-
+	            	printf("\nEl operando ingresado es...\n");
 
 	            break;
 	            case 2:
-	                printf("\nEstoy mostrando...\n ");
-
-
-
-
+	                printf("\nEl segundo operando ingresado es...	\n");
 
 	            break;
 	            case 3:
-	                printf("\nEstoy eliminando...\n");
+	                printf("\nEstoy realizando las operaciones...\n");
 	            break;
 	            case 4:
-	                printf("\nGracias por usar el programa...\n");
+	                printf("\nEl resultado es: \n");
 	            break;
+	            case 5:
+	            	printf("\nGracias por utilizar este programa el programa.\n");
 
 	        }
 
-	       // resultadoSuma = Sumar(num1;num2);
-
-
-
-
-
-
-
-	    }while(opcion!=4);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	    }while(opcion!=5);
 
 
 
 	return EXIT_SUCCESS;
 }
 
-/* Funciones para mi calculadora
-
-int Sumar(int numero1, int numero2) // prototipo de la función sumar
-
-{
-	float resultado;
-
-	resultado =  (float) numero1 + numero2;
-
-	return resultado;
-}
-
-int Restar(int numero1, int numero2) // prototipo función restar
-{
-	float resultado;
-
-	resultado =(float) numero1 + numero2;
-
-	return resultado; // qué devuelve la función
-
-}
-
-int Multiplicar(int numero1, int numero2)
-
-{
-	float resultado;
-
-	resultado = (float) numero1 + numero2;
-
-	return resultado;
-
-}
-
-int Dividir(int numero1, int numero2)
-{
-	float resultado;
-
-	resultado = (float) numero1 + numero2;
-
-	return resultado;
-
-}
 
 
 
 
-*/
+
+
+
+
+
+
+
+
+
+
 
 
