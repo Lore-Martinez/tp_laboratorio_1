@@ -12,7 +12,10 @@
 #include <stdlib.h>
 #include "OperacionesAritmeticas.h"
 
+
 int main(void) {
+
+	setbuf(stdout,NULL);
 
 	float operando1;
 	float operando2;
@@ -20,13 +23,14 @@ int main(void) {
 	float resultadoResta;
 	float resultadoMultiplicacion;
 	float resultadoDivision;
+
 	int opcion;
 
 
 	do
 	    {
 			printf("\nCalculadora UTN \n");
-	        printf("1. Cargar primer operando\n2. Cargar segundo operando \n3. Realizar operaciones\n4.Mostrar resultados\n5. Salir\n");
+	        printf("\n1. Cargar primer operando\n2. Cargar segundo operando \n3. Realizar operaciones\n4.Mostrar resultados\n5. Salir\n");
 	        printf("Elija una opcion: ");
 	        scanf("%d", &opcion);
 	        switch(opcion)
@@ -34,6 +38,8 @@ int main(void) {
 	            case 1:
 	            	printf("\nIngrese el primer operando: \n");
 	            	scanf("%f", &operando1);
+
+
 
 	            	printf("\nEl primer operando ingresado es %f \n", operando1);
 
@@ -61,7 +67,17 @@ int main(void) {
 	                printf("\nEl resultado es: %f \n", resultadoSuma);
 	                printf("\nEl resultado es: %f \n", resultadoResta);
 	                printf("\nEl resultado es: %f \n", resultadoMultiplicacion);
-	                printf("\nEl resultado es: %f \n", resultadoDivision);
+
+
+	                if(resultadoDivision==0)
+	                {
+	            		printf(" \nNo se puede dividir por cero.\n");
+
+	                } else
+	                {
+		                printf("\nEl resultado es: %f \n", resultadoDivision);
+
+	                }
 
 	            break;
 	            case 5:
