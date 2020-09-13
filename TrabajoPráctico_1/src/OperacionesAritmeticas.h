@@ -1,9 +1,9 @@
-float Sumar(float, float); //Función que utilizo para sumar dos números.
+float Sumar(float, float); //Función que utilizo para sumar  entre dos números.
 
-float Restar(float, float); //Función que utilizo para restar dos números.
+float Restar(float, float); //Función que utilizo para restar  entre dos números.
 
-float Multiplicar(float, float); //Función para multiplicar dos números, validando que ninguno de los números sea cero.
+float Multiplicar(float, float); //Función para multiplicar dos números.
 
 float Dividir(float, float); // Función para dividir entre dos números, validando que el segundo número sea distinto de cero.
 
-int validarNumeroIngresado(int);
+int Factorial(int); //Función recursiva para calcular el factorial de un número
