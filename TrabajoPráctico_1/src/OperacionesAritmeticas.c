@@ -66,11 +66,12 @@ float Multiplicar(float numero1, float numero2) // declaro la función y le asig
 
 }
 
-/** \brief Dividir calcula con una función recursiva, el factorial de un número
+/** \brief Dividir calcula la división entre dos números, validando que el divisor no sea cero.
  *
- * \param numeroIngresado Número a calcular el factorial.
- * \return Retorna 1 si el valor ingresado es menor a uno, retorna el factorial si el valor ingresado es
- * es igual o mayor a uno.
+ * \param numero1 dividendo
+ * \param numero2 divisor
+ * \return Retorna el resultado de la división entre ambos números.
+ *
  *
  */
 
