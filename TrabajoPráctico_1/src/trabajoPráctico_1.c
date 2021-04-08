@@ -23,8 +23,8 @@ int main(void) {
 	float resultadoResta;
 	float resultadoMultiplicacion;
 	float resultadoDivision;
-	int resultadoFactorial1;
-	int resultadoFactorial2;
+	long int resultadoFactorial1;
+	long int resultadoFactorial2;
 
 	int opcion;
 
@@ -71,8 +71,8 @@ int main(void) {
 	                printf("\nEl resultado de la suma es : %.2f \n", resultadoSuma);
 	                printf("\nEl resultado de la resta es: %.2f \n", resultadoResta);
 	                printf("\nEl resultado de la multiplicacion es: %.2f \n", resultadoMultiplicacion);
-	                printf("\nEl factorial del operando 1 es %d \n",resultadoFactorial1);
-	                printf("\n y el resultado del operando 2 es %d \n", resultadoFactorial2);
+	                printf("\nEl factorial del operando 1 es %ld \n",resultadoFactorial1);
+	                printf("\nEl factorial del operando 2 es %ld \n", resultadoFactorial2);
 
 	                if(resultadoDivision==0)
 	                {

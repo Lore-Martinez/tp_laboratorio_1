@@ -6,4 +6,4 @@ float Multiplicar(float, float); //Función para multiplicar dos números.
 
 float Dividir(float, float); // Función para dividir entre dos números, validando que el segundo número sea distinto de cero.
 
-int Factorial(int); //Función recursiva para calcular el factorial de un número
+long int Factorial(float); //Función recursiva para calcular el factorial de un número

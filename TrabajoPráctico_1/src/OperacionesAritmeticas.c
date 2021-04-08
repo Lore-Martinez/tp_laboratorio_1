@@ -108,15 +108,20 @@ float Dividir(float numero1, float numero2) // declaro la función y le asigno d
  *
  */
 
-int Factorial(int numeroIngresado)
+long int Factorial(float numeroIngresado)
+
 {
-	if(numeroIngresado<1) {
-		return 1;
-	}
-	else
-	{
-		return(numeroIngresado*Factorial(numeroIngresado-1));
-	}
+    long int factorial;
+    int i;
+
+    factorial = 1;
+
+    for(i=numeroIngresado; i> 0; i--)
+    {
+        factorial *= i;
+    }
+
+    return factorial;
 }
 
 
