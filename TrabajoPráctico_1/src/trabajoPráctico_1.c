@@ -43,14 +43,14 @@ int main(void) {
 
 
 
-	            	printf("\nEl primer operando ingresado es %f \n", operando1);
+	            	printf("\nEl primer operando ingresado es %.2f \n", operando1);
 
 	            break;
 	            case 2:
 	            	printf("\nIngrese el segundo operando: \n");
 	            	scanf("%f", &operando2);
 
-	            	printf("\nEl segundo operando ingresado es: %f \n", operando2);
+	            	printf("\nEl segundo operando ingresado es: %.2f \n", operando2);
 
 	            break;
 	            case 3:
@@ -68,9 +68,9 @@ int main(void) {
 	            	resultadoFactorial2 = Factorial(operando2);
 
 
-	                printf("\nEl resultado de la suma es : %f \n", resultadoSuma);
-	                printf("\nEl resultado de la resta es: %f \n", resultadoResta);
-	                printf("\nEl resultado de la multiplicacion es: %f \n", resultadoMultiplicacion);
+	                printf("\nEl resultado de la suma es : %.2f \n", resultadoSuma);
+	                printf("\nEl resultado de la resta es: %.2f \n", resultadoResta);
+	                printf("\nEl resultado de la multiplicacion es: %.2f \n", resultadoMultiplicacion);
 	                printf("\nEl factorial del operando 1 es %d \n",resultadoFactorial1);
 	                printf("\n y el resultado del operando 2 es %d \n", resultadoFactorial2);
 
@@ -80,7 +80,7 @@ int main(void) {
 
 	                } else
 	                {
-		                printf("\nEl resultado es: %f \n", resultadoDivision);
+		                printf("\nEl resultado es: %2.f \n", resultadoDivision);
 
 	                }
 
