@@ -1,12 +1,4 @@
-/*
- ============================================================================
- Name        : trabajoPráctico_1.c
- Author      : Lorena Martínez
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,6 +17,13 @@ int main(void) {
 	float resultadoDivision;
 	long int resultadoFactorial1;
 	long int resultadoFactorial2;
+	//int flagOperando1;
+	//int flagOperando2;
+
+	//flagOperando1 = 0;
+	//flagOperando2 = 0;
+	operando1 = 0;
+	operando2 = 0;
 
 	int opcion;
 
@@ -32,9 +31,35 @@ int main(void) {
 	do
 	    {
 			printf("\nCalculadora UTN \n");
-	        printf("\n1. Cargar primer operando\n2. Cargar segundo operando \n3. Realizar operaciones\n4.Mostrar resultados\n5. Salir\n");
-	        printf("Elija una opcion: ");
+
+			if(operando1 != 0)
+			{
+				printf("\n1. Cargar primer operando (%.2f)", operando1);
+
+			}else
+			{
+				printf("\n1. Cargar primer operando (x = 0)");
+
+			}
+
+
+			if(operando2 != 0)
+			{
+				printf("\n1. Cargar segundo operando (%.2f)", operando2);
+
+
+			}else
+			{
+				printf("\n1. Cargar segundo operando (x = 0)");
+			}
+
+
+	        printf("\n3. Realizar operaciones");
+	        printf("\n4. Mostrar resultados");
+	        printf("\n5. Salir\n");
+	        printf("\nElija una opcion: ");
 	        scanf("%d", &opcion);
+
 	        switch(opcion)
 	        {
 	            case 1:
@@ -43,30 +68,29 @@ int main(void) {
 
 
 
-	            	printf("\nEl primer operando ingresado es %.2f \n", operando1);
+
 
 	            break;
 	            case 2:
 	            	printf("\nIngrese el segundo operando: \n");
 	            	scanf("%f", &operando2);
 
-	            	printf("\nEl segundo operando ingresado es: %.2f \n", operando2);
+
 
 	            break;
 	            case 3:
 
 	            	 printf("\nRealizando las operaciones...\n");
 
+	            	 resultadoSuma = Sumar(operando1, operando2);
+	            	 resultadoResta = Restar(operando1, operando2);
+	            	 resultadoMultiplicacion = Multiplicar(operando1, operando2);
+	            	 resultadoDivision  = Dividir(operando1, operando2);
+	            	 resultadoFactorial1 = Factorial(operando1);
+	            	 resultadoFactorial2 = Factorial(operando2);
+
 	            break;
 	            case 4:
-
-	            	resultadoSuma = Sumar(operando1, operando2);
-	            	resultadoResta = Restar(operando1, operando2);
-	            	resultadoMultiplicacion = Multiplicar(operando1, operando2);
-	            	resultadoDivision  = Dividir(operando1, operando2);
-	            	resultadoFactorial1 = Factorial(operando1);
-	            	resultadoFactorial2 = Factorial(operando2);
-
 
 	                printf("\nEl resultado de la suma es : %.2f \n", resultadoSuma);
 	                printf("\nEl resultado de la resta es: %.2f \n", resultadoResta);
